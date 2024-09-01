@@ -1,3 +1,5 @@
+const inputTanggal = document.getElementById('tanggal');
+const inputPrioritas = document.getElementById('prioritas');
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 function addTask(){
@@ -27,6 +29,7 @@ listContainer.addEventListener("click", function(e){
         saveData();
     }
 }, false);
+
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);

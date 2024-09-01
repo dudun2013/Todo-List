@@ -8,17 +8,29 @@
 </head>
 <body>
 <div class="container">
+    <div class="baris">
+        <img src="/images/abi.jpeg" alt="photo1"/>
+        <h4>Dudun Suparmaidi<br>Software Enginering</h4>
+    </div>
     <div class="todo-app">
         <h2>To-Do List <img src="images/icon.png"></h2>
+        <input type="date" id="tanggal" placeholder="Masukkan tanggal">
+  
+<select style="text-align: name="prioritas" id="prioritas" required>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select>
         <div class="row">
-            <input type="text" id="input-box" placeholder="Add your text">
-            <button onclick="addTask()">Add</button>
+            <input type="text" id="input-box" placeholder="Add Your Task">
+            <button onclick="addTask()">submit</button>
+       
         </div>
         <ul id="list-container">
          <!--   <li class="checked">Task 1</li>
             <li>Task 2</li>
-            <li>Task 3</li>
-        </ul> -->
+            <li>Task 3</li> -->
+        </ul> 
     </div>
 </div>
 <script src="script.js"></script>
